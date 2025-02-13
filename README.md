@@ -3,7 +3,7 @@
 # # Curso de html, Css y Javascript
 
 # #  Nombre del estudiante: 
-         Fabian Rojas Porras
+Fabian Rojas Porras
 
 # # #  Secciòn 10-2
 
