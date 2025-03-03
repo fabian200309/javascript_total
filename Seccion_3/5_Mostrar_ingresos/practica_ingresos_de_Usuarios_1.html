@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica ingresos de usuarios 1</title>
+</head>
+<body>
+    <p>Ingrese su nombre</p>
+    <input type="text" id="inputTexto" >
+    <button onclick="mostrartexto()">Ingresar</button>
+    <h1 id="Titulo">Dime tu nombre</h1>
+    <script>
+        function mostrartexto(){
+           let Nombre=
+           document.getElementById("inputTexto");
+           let titulo=
+           document.getElementById("Titulo");
+            let ingresoDeNombre="Mucho gusto " + Nombre.value;
+
+           titulo.textContent= ingresoDeNombre;
+        }
+    </script>
+    
+    
+</body>
+</html>

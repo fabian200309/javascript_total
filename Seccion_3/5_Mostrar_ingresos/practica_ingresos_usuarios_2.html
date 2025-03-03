@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de ingresos de ususarios 2</title>
+</head>
+<body>
+    <p>Ingresa el nombre de tu artista favorito </p>
+    <input type="text" id="artista">
+    <button onclick="mostrartexto()">Ingresar</button>
+    <h1 id="Titulo"> Cual es tu artista favorito</h1>
+    <script>
+        function mostrartexto(){
+            let Artista=document.getElementById("artista");
+            let titulo=document.getElementById("Titulo")
+            let ArtistaFav="Mi artista favorito es "+ Artista.value;
+            titulo.textContent=ArtistaFav;
+        }
+
+    </script>
+
+    
+</body>
+</html>
