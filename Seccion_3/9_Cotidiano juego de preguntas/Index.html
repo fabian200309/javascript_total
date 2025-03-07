@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotidiano juego de pregutas</title>
+    <link rel="stylesheet" href="misEstilos.css">
+</head>
+<body onload="ComenzarCuentaRegresiva()">
+    <h1 >Responda las pregunta los más rápido que puedas  </h1>     <h1 id="textoAlarma" >30</h1>
+    <p>Tienes 30 segundos, haz click en Ingresar cuando estes listo</p>
+    <input value="3"  id="ppp"><button  onclick="ComenzarCuentaRegresiva()">ingresar</button>
+    <p>Cuanto es 50 al cuandrado</p>
+    <input type="text" id="Pregunta1">
+    <button>ingresar</button>
+    <p>como se llama el actual presidente de Costa Rica</p>
+    <input type="text" id="Pregunta2">
+    <button>ingresar</button>
+    <p>Como se llama el portero que paticipó en el mundial 2014</p>
+    <input type="text" id="Pregunta3">
+    <button>ingresar</button>
+    <p>Cuanto es 5 + 7</p>
+    <input type="text" id="Pregunta4">
+    <button>ingresar</button>
+    <p>A cuantos m/s viaja la luz</p>
+    <input type="text" id="Pregunta5">
+    <button>ingresar</button>
+
+    <audio id="AudioAlarma">
+        <source src="Audios/gameover.mp3">
+        sonido no habilitado
+    </audio>
+    <br>
+    <br>
+    <button onclick="mostrarRespuestas()" id="vuton">Finalizar</button>
+    <br>
+    <button id="buton" onclick="reintentar()">Volver a intentar</button>
+    <script>
+        let pregunta1=document.getElementById("Pregunta1");
+        let pregunta2=document.getElementById("Pregunta2");
+        let pregunta3=document.getElementById("Pregunta3");
+        let pregunta4=document.getElementById("Pregunta4");
+        let pregunta5=document.getElementById("Pregunta5");
+        let elementoTextoAlarma=document.getElementById("textoAlarma");
+        let elementoSonido=document.getElementById("AudioAlarma");
+        let segundos=document.getElementById("ppp");
+
+        function ComenzarCuentaRegresiva(){
+            setTimeout(tiempoCumplido, 1000 * segundos.value);
+            
+        }
+        function ComenzarCuentaRegresiva() {
+            setInterval(ticTac,1000)
+        }
+        function ticTac() {
+            let tiempo=setTimeout.value;
+            let Tiempo=tiempo - 1;
+            let contador=Tiempo
+            elementoTextoAlarma.textContent=contador ;
+        }
+        function tiempoCumplido(){
+            elementoSonido.play();
+            alert("Game over, vuelve a intentarlo")
+            
+        }
+
+        function mostrarRespuestas(){
+            alert("bien hecho, tus respuestas son: "+ pregunta1.value + ", " + pregunta2.value + ", "  + pregunta3.value + ", " + pregunta4.value + ", " + pregunta5.value);
+        }
+
+        function reintentar(){
+            location.reload();
+        }
+    </script>
+    
+</body>
+</html>
