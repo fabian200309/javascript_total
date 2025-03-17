@@ -15,7 +15,7 @@ h1{
     margin-left: 45%;
 }
 #suma{
-    margin-left: 40%;
+    margin-left: 38%;
     width: 100px;
     height: 100px;
     margin-top: 1%;
@@ -36,5 +36,62 @@ h1{
     margin-top: 1%;
 }
 div{
-    border: 10%;
+    border: 50%;
+}
+
+p{
+    margin-left: 38%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+
+#potencia{
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+ 
+#random{
+    margin-left: 38%;
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+#absoluto{
+    margin-left: 38%;
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+#redondeo{
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+#ceil{
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+#floor{
+    width: 100px;
+    height: 100px;
+    margin-top: 1%;
+}
+#resultadoss{
+    margin-left: 38%;
+}
+h2{
+    margin-left: 38%;
+}
+#put3{
+    margin-left:38% ;
+}
+#raiz{
+    width: 75px;
+    height: 75px;
+    margin-top: 1%;
+}
+body{
+    background-color: aqua;
 }
