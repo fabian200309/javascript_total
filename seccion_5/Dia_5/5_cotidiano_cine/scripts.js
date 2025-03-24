@@ -2,6 +2,11 @@ function Genero(genero){
     let edad = document.getElementById("LaEdad").value;
     let pelicula = document.getElementById("Pelicula");
  
+    if (!document.getElementById("LaEdad").value){
+        alert("ingrese una edad antes de iniciar");
+        return;
+    }
+        
     switch(genero) {
         case 'drama':
             if (edad < 13) {
