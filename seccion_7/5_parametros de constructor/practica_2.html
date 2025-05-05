@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica 2</title>
+</head>
+<body>
+    <script>
+        function Polo(marca,color,talla){
+            this.marca=marca;
+            this.color=color;
+            this.talla=talla;
+            this.fabricar=function(){
+                console.log("tu polo", this.marca,this.color,this.talla,"ah sido fabricado");
+            };
+        };
+        let polo1 =new Polo ("Lacoste","amarillo","M");
+        let polo2=new Polo("louisVutton","azul","L");
+        let polo3 =new Polo("Forever21","verde","s");
+    </script>
+</body>
+</html>

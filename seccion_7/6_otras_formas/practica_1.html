@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica 1</title>
+</head>
+<body>
+    <script>
+        let automovil=new Object();
+
+        automovil.marca=`corvette`;
+        automovil.modelo=`c8`;
+        automovil.anio=2020;
+        automovil.arrancar=function(){
+            console.log("en marcha")
+        };
+        let automovil2=Object.create(automovil)
+    </script>
+</body>
+</html>

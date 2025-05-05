@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica 1 </title>
+</head>
+<body>
+    <script>
+        function automovil(marca, modelo, anio){
+            this.marca=marca;
+            this.modelo=modelo;
+            this.anio=anio;
+            this.arrancar=function(){
+                console.log("tu auto", this.marca, this.modelo,this.anio,"arrancó");
+            };
+        };
+        let toyota=new automovil("toyota", "corolla", 2012);
+        let corvette=new automovil("corvette", "c8", 2020);
+        let honda=new automovil("honda", "civic", 2003);
+    </script>
+</body>
+</html>

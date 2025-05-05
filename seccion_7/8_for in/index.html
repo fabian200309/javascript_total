@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index for in</title>
+</head>
+<body>
+    <script>
+        function Perro(raza,edad,color){
+            this.patas=4;
+            this.raza=raza;
+            this.edad=edad;
+            this.color=color;
+            this.ladrar=function(){
+                console.log("guau");
+            };
+        };
+        let simba= new Perro("Shin Tzu", 4, "marron");
+        let reina= new Perro("Caniche", 4, "blanco");
+        let batu= new Perro(" Cruza", 4, "negro");
+        for(let caracteristica in batu){
+            console.log(caracteristica + ":" + batu[caracteristica]);
+        }
+    </script>
+</body>
+</html>

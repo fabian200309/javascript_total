@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index otras formas</title>
+</head>
+<body>
+    <script>
+        let coche1=new object();
+
+        coche1.marca=`chevrolet`;
+        coche1[`modelo`]=`Prisma`;
+        coche1.encender=function(){
+            console.log("coche encendido")
+        }
+        let perro1 = new object({nombre:`Simba`, edad:4});
+        let coche2= Object.create(coche1);
+    </script>
+</body>
+</html>
