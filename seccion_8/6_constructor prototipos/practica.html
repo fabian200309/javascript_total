@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor prototipos practica</title>
+</head>
+<body>
+    <script>
+        function Restaurante(Nombre,Direccion,Ciudad){
+            this.Nombre=Nombre;
+            this.Direccion=Direccion;
+            this.Ciudad=Ciudad;
+        }
+
+        let restaurante1= new Restaurante("peperrrronis", "300 oeste de tai pan", "Guatebuena");
+
+        let restaurante2= Object.create(restaurante1);
+        function prototipos() {
+            console.log(restaurante2);
+            alert("Revisa la consola para ver la herencia de restaurante2");
+        }
+
+        prototipos();
+    </script>
+</body>
+</html>

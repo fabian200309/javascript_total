@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica objetos prototipos</title>
+</head>
+<body>
+    <script>
+        function Futbolista(Nombre,Equipo,Posicion){
+            this.Nombre=Nombre;
+            this.Equipo=Equipo;
+            this.Posicion=Posicion;
+            
+        }
+
+        function Prototipos(){
+            let Futbolista1=new Futbolista("Lionel Messi", "PSG", "Delantero")
+            console.log(Futbolista1.valueOf())
+        }
+        Prototipos()
+    </script>
+</body>
+</html>
