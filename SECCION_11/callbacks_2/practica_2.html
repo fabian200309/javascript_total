@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calbck pract-2</title>
+</head>
+<body>
+    <script>
+         function test(callback){
+            setTimeout(function(){
+               callback("mensaje impreso");
+            }, 15000);
+            };
+
+        function mensaje(mensaje){
+            alert(mensaje);
+        };
+        test(mensaje);
+    </script>
+</body>
+</html>

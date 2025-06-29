@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index async await</title>
+</head>
+<body>
+    <h1>ejemplo con error</h1>
+    <script>
+        let dolar;
+        let montoDolares = 100;
+
+        fetch('https://open.er-api.com/v6/latest/USD')
+        .then(res => res.json())
+        .then(data => {
+            dolar= data.rates.CRC;
+            console.log("Tasa obtenida:", dolar)
+        });
+
+        let colones=montoDolares * dolar;
+        console.log(`${montoDolares} dolares son aproximadamente ${colones} colones`)
+    </script>
+</body>
+</html>

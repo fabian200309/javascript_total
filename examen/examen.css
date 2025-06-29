@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2em;
+  background-color: #f0f2f5;
+}
+.estudiante {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.excelente {
+  background-color: #d4edda;
+}
+.buena {
+  background-color: #fff3cd;
+}
+.aprobada {
+  background-color: #cce5ff;
+}
+.reprobada {
+  background-color: #f8d7da;
+}
